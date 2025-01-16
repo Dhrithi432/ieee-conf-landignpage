@@ -21,39 +21,39 @@ body {
     top: 0;
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    width: fit-content;
-    height: fit-content;
+    /* width: fit-content;
+    height: fit-content; */
   }
   
-  .navbar .logo {
+  /* .navbar .logo {
     font-size: 1.5rem;
     font-weight: bold;
     color: #fff;
     text-decoration: none;
-  }
+  } */
   
-  .navbar nav ul {
+  /* .navbar nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: flex-end;
   }
-  
-  .navbar nav ul li {
+   */
+  /* .navbar nav ul li {
     margin-left: 2rem;
-  }
+  } */
   
-  .navbar nav ul li a {
+  /* .navbar nav ul li a {
     text-decoration: none;
     color: #fff;
     font-size: 1rem;
     transition: color 0.3s;
-  }
+  } */
   
-  .navbar nav ul li a:hover {
+  /* .navbar nav ul li a:hover {
     color: #f9d342;
-  }
+  } */
   
   .hero {
     background: linear-gradient(to bottom, rgba(0, 33, 71, 0.8), rgba(0, 33, 71, 0.5)),
@@ -147,6 +147,55 @@ body {
     font-size: 0.9rem;
   }
 
-  .navbar-header{
-    background-color: #002147;
+ .custom-navbar{
+        height: 100px;
+ }
+
+ .nav-list-content{
+    justify-content: center;
+    align-items: center;
+    /* font-size: 18px;  /* Adjust this value as needed */
+    /* padding: 15px 20px; */
+    /* text-decoration: none;
+     */
+ }
+
+ /* Make it responsive */
+@media screen and (max-width: 768px) {
+    .nav-bar {
+      flex-direction: column;
+    }
+    
+    .nav-bar a {
+      font-size: 16px;  /* Slightly smaller font for mobile */
+      padding: 10px;
+    }
+  }
+
+  .custom-navbar {
+    display: flex;
+    align-items: center; /* Vertically centers content */
+    justify-content: center; /* Horizontally centers content */
+    background-color: white; /* Optional: adjust as per your theme */
+    padding: 0px 80px;
+    position: fixed;
+  }
+  
+  .navbar-brand {
+    font-size: 20px; /* Adjust the font size of the brand */
+    font-weight: bold; /* Optional for emphasis */
+    margin-right: auto; /* Keeps the brand aligned to the left */
+  }
+  
+  .nav-list-content .nav {
+    font-size: 18px; /* Increases font size of nav links */
+  }
+  
+  .nav-item .nav-link {
+    font-size: inherit; /* Inherits font size set above */
+    color: #007bff; /* Optional: ensure proper visibility */
+  }
+  
+  .nav-item .dropdown-menu {
+    font-size: 16px; /* Adjust dropdown font size */
   }
