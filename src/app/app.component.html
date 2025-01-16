@@ -1,3 +1,89 @@
-<div class="container">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conference on AI 2025</title>
+  <link rel="stylesheet" href="app.component.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header Navigation -->
+  <header class="navbar">
+    <div class="container">
+      <a href="#" class="logo">CAI 2025</a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#verticals">Verticals</a></li>
+          <li><a href="#authors">For Authors</a></li>
+          <li><a href="#workshops">Workshops</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-</div>
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <h1>2025 IEEE International Conference on AI Standardization and Quality Assurance (IEEE AIStandard 2025)</h1>
+      <h2>In conjuction with IEEE CAI 2025</h2>
+      <p>Santa Clara, California, USA<br>May 5–7, 2025</p>
+      <div class="cta-buttons">
+        <a href="#" class="btn-primary">Sign Up for Alerts</a>
+        <a href="#" class="btn-secondary">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About the Conference</h2>
+      <p>
+        The IEEE Conference on Artificial Intelligence (CAI) is a leading event bringing together researchers, industry experts, and practitioners to share advancements in AI. Join us for insightful discussions and groundbreaking innovations.
+      </p>
+    </div>
+  </section>
+
+  <!-- Verticals Section -->
+  <section id="verticals" class="section">
+    <div class="container">
+      <h2>Verticals</h2>
+      <p>
+        Explore diverse verticals like AI in healthcare, autonomous systems, natural language processing, and robotics. Sessions will feature expert talks, panels, and interactive workshops.
+      </p>
+    </div>
+  </section>
+
+  <!-- Workshops Section -->
+  <section id="workshops" class="section">
+    <div class="container">
+      <h2>Workshops and Tutorials</h2>
+      <p>
+        Participate in hands-on workshops and tutorials led by industry leaders and researchers. Enhance your skills and learn the latest tools in AI development.
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>©️ 2025 IEEE Conference on Artificial Intelligence. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Smooth Scrolling Script -->
+  <script>
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        const targetId = e.target.getAttribute('href').substring(1);
+        const targetSection = document.getElementById(targetId);
+        targetSection.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+</body>
+</html>
